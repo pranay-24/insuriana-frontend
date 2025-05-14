@@ -22,7 +22,7 @@ const reviews: ReviewProps[] = [
   {
     title: "Exceptional Quality",
     rating: 5,
-    content: "The attention to detail and craftsmanship is remarkable. Every product I've purchased has exceeded my expectations in terms of quality and durability.",
+    content: "The attention to detail and craftsmanship is remarkable. Every product I've purchased has exceeded my expectations in terms of quality and durability.@Insuriana ",
     author: "Michael Brown",
     location: "New York, NY",
     date: "March 15, 2024"
@@ -30,7 +30,7 @@ const reviews: ReviewProps[] = [
   {
     title: "Outstanding Service",
     rating: 5,
-    content: "Not only are the products amazing, but the customer service is unmatched. They went above and beyond to ensure I was completely satisfied with my purchase.",
+    content: "Not only are the products amazing, but the customer service is unmatched.@Insuriana They went above and beyond to ensure I was completely satisfied with my purchase.",
     author: "Emily Chen",
     location: "San Francisco, CA",
     date: "March 10, 2024"
@@ -38,7 +38,7 @@ const reviews: ReviewProps[] = [
   {
     title: "Beautiful Design",
     rating: 5,
-    content: "The aesthetic appeal of their products is simply stunning. Each piece is thoughtfully designed and adds a touch of elegance to my home.",
+    content: "The aesthetic appeal of their products is simply stunning.@Insuriana Each piece is thoughtfully designed and adds a touch of elegance to my home.",
     author: "Sophie Martin",
     location: "London, UK",
     date: "March 5, 2024"
@@ -46,7 +46,7 @@ const reviews: ReviewProps[] = [
   {
     title: "Worth Every Penny",
     rating: 5,
-    content: "While the prices might be higher than some competitors, the quality and longevity of their products make them an excellent investment.",
+    content: "While the prices might be higher than some competitors, the quality and longevity of their products make them an excellent investment.@Insuriana",
     author: "James Wilson",
     location: "Toronto, CA",
     date: "February 28, 2024"
@@ -62,7 +62,7 @@ const reviews: ReviewProps[] = [
   {
     title: "Beautiful Design",
     rating: 5,
-    content: "The aesthetic appeal of their products is simply stunning. Each piece is thoughtfully designed and adds a touch of elegance to my home.",
+    content: "@Insuriana The aesthetic appeal of their products is simply stunning. Each piece is thoughtfully designed and adds a touch of elegance to my home.",
     author: "Sophie Martin",
     location: "London, UK",
     date: "March 5, 2024"
@@ -70,12 +70,31 @@ const reviews: ReviewProps[] = [
   {
     title: "Worth Every Penny",
     rating: 5,
-    content: "While the prices might be higher than some competitors, the quality and longevity of their products make them an excellent investment.",
+    content: "@Insuriana While the prices might be higher than some competitors, the quality and longevity of their products make them an excellent investment.",
     author: "James Wilson",
     location: "Toronto, CA",
     date: "February 28, 2024"
   }
 ];
+
+// Utility function to highlight @Insuriana in text
+function HighlightedText({ text }: { text: string }) {
+  // Split text by @Insuriana
+  const parts = text.split('@Insuriana');
+  
+  return (
+    <>
+      {parts.map((part, index) => (
+        <>
+          {part}
+          {index < parts.length - 1 && (
+            <span className="text-blue-600 font-semibold">@Insuriana</span>
+          )}
+        </>
+      ))}
+    </>
+  );
+}
 
 function ReviewCard({ title, rating, content, author, location, date }: ReviewProps) {
   return (
@@ -92,7 +111,7 @@ function ReviewCard({ title, rating, content, author, location, date }: ReviewPr
           />
         ))}
       </div>
-      <p className="text-muted-foreground mb-4">{content}</p>
+      <p className="text-muted-foreground mb-4"> <HighlightedText text={content} /></p>
       <div className="flex flex-col text-sm">
         <span className="font-medium">{author}</span>
         <span className="text-muted-foreground">{location}</span>
@@ -218,7 +237,7 @@ export function Reviews() {
             onClick={nextSlide}
           >
             <ArrowRight />
-            <span className="sr-only">nextProducts</span>
+            <span className="sr-only">nextReview</span>
           </button>
 
           </div>

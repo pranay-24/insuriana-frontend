@@ -7,6 +7,8 @@ import { Button } from "~/components/ui/button";
 import { Container } from "~/components/ui/container";
 import { cn } from "~/lib/utils";
 import imagehero from './background-1.jpg';
+import { AnimatedContainer, AnimatedStaggerContainer } from "~/components/ui/animated-container";
+import { motion } from "framer-motion";
 
 export function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -29,18 +31,39 @@ export function Hero() {
             <p className="text-xl text-muted-foreground mb-8 max-w-lg">
               Elevate your style with our carefully curated products. Quality craftsmanship meets modern design.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" asChild>
+            
+                   <AnimatedContainer 
+              animation="fadeInUp" 
+              delay={0.6} 
+              className="flex flex-col sm:flex-row gap-4"
+            >
+
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+            <Button size="lg" asChild>
                 <Link href="https://intc-marketplace.vercel.app/">
                   Get A Quote
                 </Link>
               </Button>
+              </motion.div>
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+
               <Button size="lg" variant="outline" asChild>
                 <Link href="/about">
                   About Us
                 </Link>
               </Button>
-            </div>
+              </motion.div>
+             
+
+            </AnimatedContainer>
+        
+           
           </div>
           <div className={cn(
             "transition-all duration-1000 delay-300 transform relative min-h-[400px]",

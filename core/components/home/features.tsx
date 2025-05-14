@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { Container } from "~/components/ui/container";
-import { Section, SectionHeader } from "~/components/ui/section";
+ import { Section, SectionHeader } from "~/components/ui/section";
 import { Badge } from "~/components/ui/badge";
 import { ShieldCheck, Truck, RotateCcw, Clock } from "lucide-react";
 import { cn } from "~/lib/utils";
+import { AnimatedContainer, AnimatedStaggerContainer } from "~/components/ui/animated-container";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -70,15 +71,21 @@ export function Features() {
           title="Shop with Confidence"
           description="We're committed to providing the best shopping experience"
         />
+        <AnimatedContainer 
+                      animation="fadeInUp" 
+                      delay={0.6} 
+                      className="flex flex-col sm:flex-row gap-4"
+                    >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <FeatureCard 
               key={index} 
               {...feature} 
-              delay={150 * (index + 1)}
+              delay={200 * (index + 1)}
             />
           ))}
         </div>
+        </AnimatedContainer>
       </Container>
     </Section>
   );
