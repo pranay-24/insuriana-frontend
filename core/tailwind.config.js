@@ -11,8 +11,10 @@ const config = {
         transparent: 'transparent',
         current: 'currentColor',
         black: '#000000',
-        primary: '#053FB0',
-        secondary: '#3071EF',
+        primary: '#214E5F',
+        ptext: '#FFFFFF',
+        secondary: '#D8534F',
+        stext: '#214E5F',
         white: '#FFFFFF',
         error: {
           DEFAULT: '#AD0000',

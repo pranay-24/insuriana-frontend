@@ -24,7 +24,7 @@ export function Hero() {
           <div className={cn(
             "transition-all duration-1000 transform",
             loaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-          )}>
+           )}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               Discover Our <span className="text-primary">Premium</span> Collection
             </h1>
