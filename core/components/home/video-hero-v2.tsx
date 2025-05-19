@@ -8,9 +8,10 @@ import { cn } from "~/lib/utils";
 import Link from "next/link";
 import { AnimatedContainer, AnimatedStaggerContainer } from "~/components/ui/animated-container";
 import { motion } from "framer-motion";
+ import { Section, SectionHeader } from "~/components/ui/section";
 
 
-export function VideoHero() {
+export function VideoHero2() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -18,8 +19,8 @@ export function VideoHero() {
   }, []);
 
   return (
-   
-    <div className="relative w-full h-screen flex items-center">
+      
+    <div className="relative w-full min-h-screen flex items-center">
       {/* Desktop Video */}
       <video
         autoPlay
@@ -62,35 +63,23 @@ export function VideoHero() {
             Premium Quality Products
           </span> */}
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-center">
                The Smartest Way to Pick the 
-Right <span className="text-primary">Insurance</span> for You.
+       Right <span className="text-primary">Insurance</span> for You.
             </h1>
           
-          <p className="text-xl text-white/80 mb-8">
+          <p className="text-xl text-white/80 mb-8 text-center">
            For individuals and families, we tailor coverage 
-that fits you — fast, fair, and flexible.
+       that fits you — fast, fair, and flexible.
 
           </p>
 
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="flex">
-              {[...Array(5)].map((_, i) => (
-                <Star
-                  key={i}
-                  className="h-6 w-6 text-yellow-400 fill-yellow-400"
-                />
-              ))}
-            </div>
-            <span className="text-white/90">
-              Rated 4.9/5 from over 1,000+ reviews
-            </span>
-          </div>
+         
 
                  <AnimatedContainer 
                       animation="fadeInUp" 
                       delay={0.6} 
-                      className="flex flex-col sm:flex-row gap-4"
+                      className="flex flex-col mx-auto items-center  justify-center sm:flex-row gap-4"
                     >
         
                       <motion.div
@@ -103,23 +92,11 @@ that fits you — fast, fair, and flexible.
                         </Link>
                       </Button>
                       </motion.div>
-                      <motion.div
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.98 }}
-                      >
-        
-                      <Button size="lg" variant="outline" asChild>
-                        <Link href="/about">
-                          About Us
-                        </Link>
-                      </Button>
-                      </motion.div>
-                     
-        
+                          
                     </AnimatedContainer>
         </div>
       </Container>
     </div>
-
+   
   );
 }

@@ -38,33 +38,24 @@ function FeatureCard({ icon, title, description, delay }: FeatureCardProps) {
   );
 }
 
-export function Features() {
+export function ThreeFeatures() {
   const features = [
     {
       icon: <ShieldCheck className="h-6 w-6" />,
-      title: "Accident Insurance",
-      description: "Fast payouts for unexpected injuries.",
+      title: "Free validation within 6 hours",
+      description: "of your tenant, with no obligation on your part",
     },
     {
       icon: <Truck className="h-6 w-6" />,
-      title: "Cancer Insurance",
-      description: "Lump-sum benefits when it matters most.",
+      title: "Reimbursement",
+      description: "within 48 hours as soon as you report the first unpaid rent month",
     },
     {
       icon: <RotateCcw className="h-6 w-6" />,
-      title: "Critical Illness Insurance",
-      description: "Coverage for heart attacks, strokes, and more.",
+      title: "No reimbursement cap",
+      description: "and Insuriana handles the legal proceedings and their costs",
     },
-    {
-      icon: <Clock className="h-6 w-6" />,
-      title: "Hospital Indemnity",
-      description: "Daily cash benefits for hospital stays and surgeries.",
-    },
-    {
-      icon: <Clock className="h-6 w-6" />,
-      title: "Short-Term Pay",
-      description: "Income protection when sickness or injury strikes.",
-    },
+    
   ];
 
   return (
@@ -74,14 +65,15 @@ export function Features() {
         {/* <Badge className="mb-4 mx-auto">Why Choose Us</Badge> */}
         <SectionHeader 
           title="We Protect What Matters Most"
-          description="Whether it’s a sprain on the field or a serious diagnosis, Our plans are built to back you up."
+          description="Whether it’s a sprain on the field or a serious diagnosis, 
+Our plans are built to back you up."
         />
         <AnimatedContainer 
                       animation="fadeInUp" 
                       delay={0.6} 
                       className="flex flex-col sm:flex-row gap-4"
                     >
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <FeatureCard 
               key={index} 

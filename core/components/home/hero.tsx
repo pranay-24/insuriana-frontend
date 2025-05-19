@@ -26,8 +26,10 @@ export function Hero() {
             loaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
            )}>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-              Discover Our <span className="text-primary">Premium</span> Collection
+               The Smartest Way to Pick the 
+Right <span className="text-primary">Insurance</span> for You.
             </h1>
+           
             <p className="text-xl text-muted-foreground mb-8 max-w-lg">
               Elevate your style with our carefully curated products. Quality craftsmanship meets modern design.
             </p>

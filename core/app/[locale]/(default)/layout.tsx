@@ -22,7 +22,7 @@ export default async function DefaultLayout({ params, children }: Props) {
       </div>
       </Suspense>
 {/* 2xl:container */}
-      <main className="flex-1 px-4  sm:px-10 lg:px-12 2xl:mx-auto 2xl:px-0">
+      <main className="flex-1 px-4  sm:px-10 lg:px-12  2xl:px-0">
         {children}
       </main>
 

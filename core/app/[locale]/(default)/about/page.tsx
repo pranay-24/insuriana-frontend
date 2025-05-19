@@ -5,6 +5,8 @@ import { Stats } from "~/components/about/stats";
 import { Reviews } from "~/components/home/reviews";
 import { Newsletter } from "~/components/home/newsletter";
 import type { Metadata } from 'next';
+import { VideoHero } from "~/components/home/video-hero";
+import { VideoHero2 } from "~/components/home/video-hero-v2";
 
 export const metadata: Metadata = {
   title: 'About Us | Your Store Name',
@@ -14,12 +16,14 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+    <VideoHero2/>
+      {/* <VideoHero/> */}
       <AboutHero />
-      <MissionValues />
-      <Stats />
+      {/* <MissionValues /> */}
+      {/* <Stats /> */}
       {/* <Team /> */}
-      <Reviews />
-      <Newsletter />``
+      {/* <Reviews />
+      <Newsletter /> */}
     </>
   );
 }

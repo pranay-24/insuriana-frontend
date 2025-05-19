@@ -2,7 +2,9 @@ import { removeEdgesAndNodes } from '@bigcommerce/catalyst-client';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Hero } from "~/components/home/hero";
 import { VideoHero } from "~/components/home/video-hero";
+
 import { Features } from "~/components/home/features";
+import { ThreeFeatures } from "~/components/home/3-features";
 import { Reviews } from "~/components/home/reviews";
 import { Newsletter } from "~/components/home/newsletter";
 
@@ -70,6 +72,7 @@ export default async function Home({ params }: Props) {
      <VideoHero/>
       {/* <Slideshow /> */}
       <Features />
+      <ThreeFeatures/>
      <MissionValues />
       <AboutHero />
        <AboutHero1 />
