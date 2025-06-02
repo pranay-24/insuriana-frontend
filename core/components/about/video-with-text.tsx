@@ -10,7 +10,12 @@ export function VideoText() {
     
       <Section>
       <Container>
-        <div className="pt-20 pb-12 md:pb-20 lg:pb-24">
+        <SectionHeader 
+          title="How It Works"
+         
+        />
+
+        <div className=" pb-12 md:pb-20 lg:pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-lg">
                 <video
@@ -21,33 +26,34 @@ export function VideoText() {
       playsInline     
     >
       {/* <source src="/videos/hero.webm" type="video/webm" /> */}
-      <source src="/videos/desktop-hero.mp4" type="video/mp4" />
+      <source src="https://res.cloudinary.com/dwe4p22ut/video/upload/v1747716610/desktop-hero_n6nmrn.mp4" type="video/mp4" />
       {/* fallback text for very old browsers */}
       Your browser doesn’t support embedded videos.
     </video>
           </div>
 
           <div>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+            {/* <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
               Our Story
-            </h1>
+            </h1> */}
             <p className="text-xl text-muted-foreground mb-6">
-              Founded in 2020, we set out to create a brand that combines premium quality with modern aesthetics.
+             We ask for the basics — like your age, life stage, and coverage goals — so we can guide you better. No long forms, no fluff.
             </p>
             <p className="mb-6">
-              Our journey began with a simple idea: create products that stand the test of time, both in durability and style. We believe that great design should be accessible to everyone.
+              We match you with smart options
+Our platform filters through top carriers to recommend plans that actually fit your needs — not just the ones with the highest premiums.
             </p>
             <p>
-              Today, we continue to grow and evolve, but our core values remain the same: quality, innovation, and customer satisfaction.
+              Choose What Works for You and Enroll
             </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-7" style={{ maxWidth: '350px' }}>
           
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/about">
-                  Learn More
-                </Link>
-              </Button>
+             <Button size="lg" className="bg-secondary rounded-[3.4rem]" asChild>
+                        <Link href="https://intc-marketplace.vercel.app/">
+                          Explore Our Process
+                        </Link>
+                      </Button>
             </div>
 
           </div>

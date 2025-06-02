@@ -59,7 +59,7 @@ export function ThreeFeatures() {
   ];
 
   return (
-    <Section className="border-y bg-muted/30">
+    <Section className=" bg-muted/30">
       <Container className="relative">
        
         {/* <Badge className="mb-4 mx-auto">Why Choose Us</Badge> */}

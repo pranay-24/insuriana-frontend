@@ -18,8 +18,8 @@ export function VideoHero() {
   }, []);
 
   return (
-   
-    <div className="relative w-full h-screen flex items-center">
+   <div>
+    <div className="relative w-full h-[80vh] flex items-center">
       {/* Desktop Video */}
       <video
         autoPlay
@@ -29,7 +29,7 @@ export function VideoHero() {
         className="absolute inset-0 w-full h-full object-cover hidden md:block"
       >
         <source
-          src="/videos/desktop-hero.mp4"
+          src="https://res.cloudinary.com/dwe4p22ut/video/upload/v1747716610/desktop-hero_n6nmrn.mp4"
           type="video/mp4"
         />
       </video>
@@ -43,13 +43,13 @@ export function VideoHero() {
         className="absolute inset-0 w-full h-full object-cover md:hidden"
       >
         <source
-          src="/videos/desktop-hero.mp4"
+          src="https://res.cloudinary.com/dwe4p22ut/video/upload/v1747716610/desktop-hero_n6nmrn.mp4"
           type="video/mp4"
         />
       </video>
 
       {/* Video Overlay */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/5" />
 
       <Container className="relative z-10">
         <div
@@ -62,18 +62,18 @@ export function VideoHero() {
             Premium Quality Products
           </span> */}
           
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-               The Smartest Way to Pick the 
-Right <span className="text-primary">Insurance</span> for You.
+          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+               The Smartest Way to Pick the  
+ <span className="text-secondary"> Right Insurance</span> for You.
             </h1>
           
-          <p className="text-xl text-white/80 mb-8">
+          <p className="text-center text-xl text-white/80 mb-8">
            For individuals and families, we tailor coverage 
 that fits you — fast, fair, and flexible.
 
           </p>
 
-          <div className="flex items-center space-x-4 mb-8">
+          {/* <div className="flex items-center space-x-4 mb-8">
             <div className="flex">
               {[...Array(5)].map((_, i) => (
                 <Star
@@ -85,25 +85,25 @@ that fits you — fast, fair, and flexible.
             <span className="text-white/90">
               Rated 4.9/5 from over 1,000+ reviews
             </span>
-          </div>
+          </div> */}
 
                  <AnimatedContainer 
                       animation="fadeInUp" 
                       delay={0.6} 
-                      className="flex flex-col sm:flex-row gap-4"
+                      className="flex flex-col sm:flex-row justify-center  gap-4 "
                     >
         
-                      <motion.div
+                      <motion.div 
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                       >
-                    <Button size="lg" asChild>
+                    <Button size="lg" className="bg-secondary rounded-[3.4rem]" asChild>
                         <Link href="https://intc-marketplace.vercel.app/">
                           Get A Quote
                         </Link>
                       </Button>
                       </motion.div>
-                      <motion.div
+                      {/* <motion.div
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.98 }}
                       >
@@ -114,12 +114,36 @@ that fits you — fast, fair, and flexible.
                         </Link>
                       </Button>
                       </motion.div>
-                     
+                      */}
         
                     </AnimatedContainer>
         </div>
       </Container>
     </div>
-
+    <div className="flex justify-center text-center space-x-5 mt-3 mx-auto ">
+     <div className="flex items-center  space-x-4  ">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="h-6 w-6 text-black fill-black"
+                    />
+                  ))}
+                </div>
+                <span className="text-black">
+                  4.8/5 rated by 1200+ policyholders
+                </span>
+              </div>
+        <p className="text-black ">
+           Backed by experts.
+          </p>
+          <p className="text-black ">
+           Trusted by real people.
+          </p>
+<p className="text-black ">
+           Trustpilot
+          </p>
+    </div>
+</div>
   );
 }

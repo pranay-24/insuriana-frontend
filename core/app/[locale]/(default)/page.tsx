@@ -6,8 +6,9 @@ import { VideoHero } from "~/components/home/video-hero";
 import { Features } from "~/components/home/features";
 import { ThreeFeatures } from "~/components/home/3-features";
 import { Reviews } from "~/components/home/reviews";
+import { VideoProgress } from "~/components/home/video-progress";
 import { Newsletter } from "~/components/home/newsletter";
-
+import { ImageGridCards } from "~/components/home/ImageGridCards";
 import { AboutHero } from "~/components/about/about-hero";
 import { MissionValues } from "~/components/about/mission-values";
 import { Stats} from "~/components/about/stats";
@@ -20,6 +21,7 @@ import { revalidate } from '~/client/revalidate-target';
 import { ProductCardCarousel } from '~/components/product-card-carousel';
 import { ProductCardCarouselFragment } from '~/components/product-card-carousel/fragment';
 import { Slideshow } from '~/components/slideshow';
+import {VideoText} from '~/components/about/video-with-text';
 
 const HomePageQuery = graphql(
   `
@@ -72,10 +74,13 @@ export default async function Home({ params }: Props) {
      <VideoHero/>
       {/* <Slideshow /> */}
       <Features />
-      <ThreeFeatures/>
+      <VideoText/>
+      
+      <ImageGridCards/>
      <MissionValues />
       <AboutHero />
        <AboutHero1 />
+       <VideoProgress/>
       <Stats/>
      <Reviews />
      

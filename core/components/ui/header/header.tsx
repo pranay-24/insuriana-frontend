@@ -53,7 +53,7 @@ const Header = ({
   search,
 }: Props) => (
   <div className={cn('relative', className)}>
-    <header className=" max-w-7xl mx-auto flex h-[92px] items-center justify-between gap-1 overflow-y-visible bg-white px-4 py-4 w-full sm:px-10 lg:gap-8 lg:px-12 2xl:mx-auto 2xl:px-0">
+    <header className="fixed top-0 z-50  mx-auto flex h-[92px] items-center justify-between gap-1 overflow-y-visible bg-white px-4 py-4 w-full sm:px-10 lg:gap-8 lg:px-12 2xl:mx-auto 2xl:px-0">
       
       <CustomLink className="overflow-hidden text-ellipsis py-3" href="/">
         {typeof logo === 'object' ? (

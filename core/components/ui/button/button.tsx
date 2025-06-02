@@ -31,7 +31,7 @@ const Button = forwardRef<ComponentRef<'button'>, Props>(
     return (
       <Comp
         className={cn(
-          'relative flex w-full items-center justify-center border-2 border-primary px-[30px] py-2.5 text-base font-semibold leading-6 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/20 disabled:border-gray-400',
+          'relative flex w-full items-center justify-center border-2 border-secondary px-[30px] py-2.5 text-base font-semibold leading-6 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/20 disabled:border-gray-400',
           variant === 'primary' &&
             'bg-primary text-ptext hover:border-secondary hover:bg-secondary disabled:bg-gray-400 disabled:hover:border-gray-400 disabled:hover:bg-gray-400',
           variant === 'secondary' &&

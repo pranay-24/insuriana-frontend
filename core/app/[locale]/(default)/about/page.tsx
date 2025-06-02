@@ -7,6 +7,7 @@ import { Newsletter } from "~/components/home/newsletter";
 import type { Metadata } from 'next';
 import { VideoHero } from "~/components/home/video-hero";
 import { VideoHero2 } from "~/components/home/video-hero-v2";
+import {VideoText} from '~/components/about/video-with-text';
 
 export const metadata: Metadata = {
   title: 'About Us | Your Store Name',
@@ -19,6 +20,7 @@ export default function AboutPage() {
     <VideoHero2/>
       {/* <VideoHero/> */}
       <AboutHero />
+      <VideoText/>
       {/* <MissionValues /> */}
       {/* <Stats /> */}
       {/* <Team /> */}

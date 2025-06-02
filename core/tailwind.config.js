@@ -10,7 +10,7 @@ const config = {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
-        black: '#000000',
+        black: '#1C2232',
         primary: '#214E5F',
         ptext: '#FFFFFF',
         secondary: '#D8534F',

@@ -35,6 +35,7 @@ export default async (): Promise<NextConfig> => {
       ignoreDuringBuilds: !!process.env.CI,
       dirs: ['app', 'client', 'components', 'lib', 'middlewares'],
     },
+    //  staticDirs: ['public', 'core/public'],
     // default URL generation in BigCommerce uses trailing slash
     trailingSlash: process.env.TRAILING_SLASH !== 'false',
     

@@ -3,16 +3,20 @@ import { Section, SectionHeader } from "~/components/ui/section";
 import { Target, Heart, Users, Shield } from "lucide-react";
 
 interface ValueCardProps {
-  icon: React.ReactNode;
+  imageUrl:  string;
   title: string;
   description: string;
 }
 
-function ValueCard({ icon, title, description }: ValueCardProps) {
+function ValueCard({ imageUrl, title, description }: ValueCardProps) {
   return (
     <div className="flex flex-col items-center lg:items-start text-center lg:text-left p-6 rounded-lg transition-colors hover:bg-muted/50">
-      <div className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
-        {icon}
+      <div className="inline-flex h-[100px] w-[100px] items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
+        <img
+            src={imageUrl}
+            alt={title}
+            className="h-full w-full object-contain group-hover:opacity-90 transition-opacity"
+          />
       </div>
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
@@ -23,24 +27,24 @@ function ValueCard({ icon, title, description }: ValueCardProps) {
 export function MissionValues() {
   const values = [
     {
-      icon: <Target className="h-6 w-6" />,
-      title: "Mission",
-      description: "Our mission is to provide exceptional products that enhance everyday living through thoughtful design and quality craftsmanship.",
+      imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748879486/All_in_One_y4kfsz.svg",
+      title: "All in one marketplace",
+      description: "Compare and, in most cases, buy accident, dental, vision, life, hospital, and more — all in minutes.",
     },
     {
-      icon: <Heart className="h-6 w-6" />,
-      title: "Passion",
-      description: "We're passionate about creating products that bring joy and functionality to your life, driven by our love for design and innovation.",
+      imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748879486/No_Pressure_q35t5z.svg",
+      title: "No Pressure, Ever",
+      description: "Shop with confidence. No sales calls, no pushy tactics — just clear tools and honest options.",
     },
     {
-      icon: <Users className="h-6 w-6" />,
-      title: "Community",
-      description: "We believe in building relationships with our customers and creating a community that shares our values and vision.",
+      imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748879486/Industry_Expert_a6zgoh.svg",
+      title: "Built by Industry Experts",
+      description: "Created by insiders with decades of insurance experience — so you get what actually matters.",
     },
     {
-      icon: <Shield className="h-6 w-6" />,
-      title: "Integrity",
-      description: "We operate with transparency and honesty in everything we do, from our sourcing practices to our customer relationships.",
+     imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748879486/Coverage_that_fits_nt7zdi.svg",
+      title: "Coverage That Fits Your Life",
+      description: "From solo riders to big families, our plans are tailored to fit every stage of life.",
     },
   ];
 
@@ -48,9 +52,9 @@ export function MissionValues() {
     <Section className="bg-muted/30">
       <Container>
         <SectionHeader 
-          title="Our Mission & Values"
-          description="The principles that guide everything we do"
-          align="left"
+          title="Get Your Coverage From Anywhere"
+          description="Compare, learn, and enroll from where you are"
+          align="center"
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           {values.map((value, index) => (

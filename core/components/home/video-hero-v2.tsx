@@ -30,7 +30,7 @@ export function VideoHero2() {
         className="absolute inset-0 w-full h-full object-cover hidden md:block"
       >
         <source
-          src="/videos/desktop-hero.mp4"
+          src="https://res.cloudinary.com/dwe4p22ut/video/upload/v1747716610/desktop-hero_n6nmrn.mp4"
           type="video/mp4"
         />
       </video>
@@ -44,7 +44,7 @@ export function VideoHero2() {
         className="absolute inset-0 w-full h-full object-cover md:hidden"
       >
         <source
-          src="/videos/desktop-hero.mp4"
+          src="https://res.cloudinary.com/dwe4p22ut/video/upload/v1747716610/desktop-hero_n6nmrn.mp4"
           type="video/mp4"
         />
       </video>
