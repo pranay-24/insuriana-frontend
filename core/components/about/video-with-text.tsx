@@ -15,7 +15,7 @@ export function VideoText() {
          
         />
 
-        <div className=" pb-12 md:pb-20 lg:pb-24">
+        <div className=" ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               <div className="relative h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-lg">
                 <video

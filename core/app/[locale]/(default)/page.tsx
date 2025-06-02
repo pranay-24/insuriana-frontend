@@ -2,6 +2,7 @@ import { removeEdgesAndNodes } from '@bigcommerce/catalyst-client';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { Hero } from "~/components/home/hero";
 import { VideoHero } from "~/components/home/video-hero";
+import { VideoHero3 } from "~/components/home/video-hero-v3";
 
 import { Features } from "~/components/home/features";
 import { ThreeFeatures } from "~/components/home/3-features";
@@ -78,10 +79,10 @@ export default async function Home({ params }: Props) {
       
       <ImageGridCards/>
      <MissionValues />
-      <AboutHero />
-       <AboutHero1 />
-       <VideoProgress/>
-      <Stats/>
+      {/* <AboutHero /> */}
+       {/* <AboutHero1 /> */}
+       {/* <VideoProgress/> */}
+      {/* <Stats/> */}
      <Reviews />
      
         {/* <ProductCardCarousel
@@ -91,17 +92,18 @@ export default async function Home({ params }: Props) {
           title={t('Carousel.featuredProducts')}
         /> */}
        
-        <ProductCardCarousel
+        {/* <ProductCardCarousel
           products={newestProducts}
           showCart={false}
           showCompare={false}
           title={t('Carousel.newestProducts')}
-        />
+        /> */}
      
        {/* <Slideshow /> */
        }
 
-       <Newsletter />
+       {/* <Newsletter /> */}
+       <VideoHero3/>
     </>
   );
 }

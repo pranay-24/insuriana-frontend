@@ -10,7 +10,7 @@ import { AnimatedContainer, AnimatedStaggerContainer } from "~/components/ui/ani
 import { motion } from "framer-motion";
 
 
-export function VideoHero() {
+export function VideoHero3() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -62,16 +62,14 @@ export function VideoHero() {
             Premium Quality Products
           </span> */}
           
-          <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-               The Smartest Way to Pick the  
- <span className="text-secondary"> Right Insurance</span> for You.
-            </h1>
+          <h3 className="text-center text-2xl md:text-4xl w-full max-w-[450px] mx-auto font-bold tracking-tight mb-6">
+               Ready to find the insurance that fits you?</h3>
           
-          <p className="text-center text-xl text-white/80 mb-8">
+          {/* <p className="text-center text-xl text-white/80 mb-8">
            For individuals and families, we tailor coverage 
 that fits you — fast, fair, and flexible.
 
-          </p>
+          </p> */}
 
           {/* <div className="flex items-center space-x-4 mb-8">
             <div className="flex">
@@ -99,7 +97,7 @@ that fits you — fast, fair, and flexible.
                       >
                     <Button size="lg" className="bg-secondary rounded-[3.4rem]" asChild>
                         <Link href="https://intc-marketplace.vercel.app/">
-                          Get A Quote
+                          Get My Quote Now
                         </Link>
                       </Button>
                       </motion.div>
@@ -120,8 +118,8 @@ that fits you — fast, fair, and flexible.
         </div>
       </Container>
     </div>
-    <div className="flex flex-col md:flex-row justify-center text-center space-x-5 mt-3 mx-auto gap-3 md:gap-5">
-     <div className="flex  flex-col md:flex-row items-center  space-x-4  gap-3 ">
+    {/* <div className="flex justify-center text-center space-x-5 mt-3 mx-auto ">
+     <div className="flex items-center  space-x-4  ">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
                     <Star
@@ -134,16 +132,16 @@ that fits you — fast, fair, and flexible.
                   4.8/5 rated by 1200+ policyholders
                 </span>
               </div>
-          <p className="text-black ">
+        <p className="text-black ">
            Backed by experts.
           </p>
           <p className="text-black ">
            Trusted by real people.
           </p>
-          <p className="text-black ">
+<p className="text-black ">
            Trustpilot
           </p>
-    </div>
+    </div> */}
 </div>
   );
 }

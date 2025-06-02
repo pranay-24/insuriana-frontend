@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Container } from "~/components/ui/container";
-import { Section, SectionHeader } from "~/components/ui/section";
+import { Section, SectionHeader,TestimonialSectionHeader } from "~/components/ui/section";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "~/components/ui/button";
 import { cn } from "~/lib/utils";
@@ -149,9 +149,9 @@ export function Reviews() {
   return (
     <Section>
       <Container>
-        <SectionHeader
-          title="Customer Reviews"
-          description="See what our customers have to say about their experience with us"
+        <TestimonialSectionHeader
+          title="Trusted By People Like You"
+          description=""
         />
         
         <div className="relative mt-12">

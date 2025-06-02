@@ -53,7 +53,7 @@ const Header = ({
   search,
 }: Props) => (
   <div className={cn('relative', className)}>
-    <header className="fixed top-0 z-50  mx-auto flex h-[92px] items-center justify-between gap-1 overflow-y-visible bg-white px-4 py-4 w-full sm:px-10 lg:gap-8 lg:px-12 2xl:mx-auto 2xl:px-0">
+    <header className="fixed top-0 z-50  mx-auto flex h-[92px] items-center justify-between gap-1 overflow-y-visible bg-white px-4 lg:px-12 py-4 w-full  lg:gap-8  2xl:mx-auto ">
       
       <CustomLink className="overflow-hidden text-ellipsis py-3" href="/">
         {typeof logo === 'object' ? (
@@ -84,7 +84,7 @@ const Header = ({
                     className="cursor-pointer transition duration-200 group-data-[state=open]/button:-rotate-180"
                   />
                 </NavigationMenuPrimitive.Trigger>
-                <NavigationMenuPrimitive.Content className="flex gap-20 2xl:container data-[motion^=from-]:animate-in data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 sm:px-10 lg:px-12 2xl:mx-auto 2xl:px-0">
+                <NavigationMenuPrimitive.Content className="flex gap-20 2xl:container data-[motion^=from-]:animate-in data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 px-10 lg:px-12 2xl:mx-auto 2xl:px-0">
                   {link.groups.map((group) => (
                     <ul className="flex flex-col" key={group.href}>
                       <li>

@@ -26,7 +26,7 @@ function FeatureCard({ imageUrl, title, description, delay }: FeatureCardProps) 
 
   return (
     <div className={cn(
-      "group flex flex-col items-center  p-6 text-center transition-all duration-500",
+      "group flex flex-col items-center  p-1 md:p-6 text-center transition-all duration-500",
       "hover:border-primary/50 hover:shadow-md",
       loaded ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
     )}>
@@ -37,7 +37,7 @@ function FeatureCard({ imageUrl, title, description, delay }: FeatureCardProps) 
             className="h-full w-full object-contain group-hover:opacity-90 transition-opacity"
           />
         </div>
-      <h3 className="mb-2 text-xl font-semibold">{title}</h3>
+      <h3 className="mb-2 text-med lg:text-xl font-semibold">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
     </div>
   );
@@ -48,43 +48,50 @@ export function Features() {
     {
       imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748880833/heart_attack-icon_cxikin.svg",
       title: "Life Insurance",
-      description: "Fast payouts for unexpected injuries.",
+      description:""
       
     },
     {
       imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748880832/emergency_room-icon_r9my9v.svg",
       title: "Disability",
-      description: "Lump-sum benefits when it matters most.",
+      description:""
+     
     },
      {
       imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748880832/accident-icon_htvjbx.svg",
       title: "Accident",
-      description: "Lump-sum benefits when it matters most.",
+      description:""
+     
     },
     {
       imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748880832/Cancer_Insurance-icon_ghm15n.svg",
       title: "Cancer",
-      description: "Lump-sum benefits when it matters most.",
+      description:""
+      
     },
     {
       imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748880832/Critical_Illness-icon_ep1wff.svg",
       title: "Critical Illness",
-      description: "Coverage for heart attacks, strokes, and more.",
+      description:""
+      
     },
     {
      imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748880833/hospital_Income-icon_kcoyot.svg",
       title: "Hospital Indemnity",
-      description: "Daily cash benefits for hospital stays and surgeries.",
+      description:""
+     
     },
     {
       imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748880832/dental-icon_xstqc1.svg",
       title: "Dental",
-      description: "Income protection when sickness or injury strikes.",
+      description:""
+     
     },
      {
       imageUrl: "https://res.cloudinary.com/dkjqfoekt/image/upload/v1748880834/vision-icon_bbj7fe.svg",
       title: "Vision",
-      description: "Income protection when sickness or injury strikes.",
+      description:""
+      
     },
   ];
 
@@ -106,7 +113,7 @@ export function Features() {
                       className="flex flex-col sm:flex-row gap-4"
                     >
        
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <div className="mx-auto grid grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <FeatureCard 
               key={index} 
