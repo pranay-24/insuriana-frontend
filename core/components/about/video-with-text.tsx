@@ -39,11 +39,10 @@ export function VideoText() {
             <p className="text-xl text-muted-foreground mb-6">
              We ask for the basics — like your age, life stage, and coverage goals — so we can guide you better. No long forms, no fluff.
             </p>
-            <p className="mb-6">
-              We match you with smart options
-Our platform filters through top carriers to recommend plans that actually fit your needs — not just the ones with the highest premiums.
+            <p className="text-xl mb-6">
+              We match you with smart options Our platform filters through top carriers to recommend plans that actually fit your needs — not just the ones with the highest premiums.
             </p>
-            <p>
+            <p className="text-xl">
               Choose What Works for You and Enroll
             </p>
 
