@@ -67,9 +67,13 @@ export function VideoHero() {
  <span className="text-secondary"> Right Insurance</span> for You
             </h1>
           
-          <p className="text-center text-xl text-white/80 mb-8">
+          <p className="text-center text-xl text-black/80 mb-4">
            For individuals and families, we tailor coverage 
-that fits you — fast, fair, and flexible.
+that fits your needs.
+
+          </p>
+          <p className="text-center text-bolder text-2xl text-black/80 mb-8">
+           Fast, Fair, and Flexible.
 
           </p>
 
