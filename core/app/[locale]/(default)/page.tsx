@@ -75,7 +75,7 @@ export default async function Home({ params }: Props) {
      <VideoHero/>
       {/* <Slideshow /> */}
       <Features />
-      <VideoText/>
+      {/* <VideoText/> */}
         <VideoProgress/> 
       <ImageGridCards/>
      <MissionValues />
