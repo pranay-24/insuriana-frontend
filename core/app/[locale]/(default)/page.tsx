@@ -76,12 +76,12 @@ export default async function Home({ params }: Props) {
       {/* <Slideshow /> */}
       <Features />
       <VideoText/>
-      
+        <VideoProgress/> 
       <ImageGridCards/>
      <MissionValues />
       {/* <AboutHero /> */}
        {/* <AboutHero1 /> */}
-       {/* <VideoProgress/> */}
+      
       {/* <Stats/> */}
      <Reviews />
      
