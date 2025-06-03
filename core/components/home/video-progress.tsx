@@ -37,18 +37,18 @@ export function VideoProgress() {
 
   const items = [
     {
-      title: "Craftsmanship",
-      description: "Every product is crafted with meticulous attention to detail, ensuring the highest quality.",
+      title: "Step 1",
+      description: "We ask for the basics — like your age, life stage, and coverage goals — so we can guide you better. No long forms, no fluff.",
       video: "https://res.cloudinary.com/dkjqfoekt/video/upload/v1748044747/5453379-uhd_3840_2160_25fps_ltx2bq.mp4"
     },
     {
-      title: "Innovation",
-      description: "We continuously push boundaries to bring you the latest in design and technology.",
+      title: "Step 2",
+      description: "We match you with smart options. Our platform filters through top carriers to recommend plans that actually fit your needs — not just the ones with the highest premiums.",
       video: "https://res.cloudinary.com/dkjqfoekt/video/upload/v1748044747/5453379-uhd_3840_2160_25fps_ltx2bq.mp4"
     },
     {
-      title: "Sustainability",
-      description: "Our commitment to sustainable practices shapes every decision we make.",
+      title: "Step 3",
+      description: "Choose What Works for You and Enroll.",
       video: "https://res.cloudinary.com/dkjqfoekt/video/upload/v1748042472/desktop-hero_vmfwtl.mp4"
     }
   ];
