@@ -64,7 +64,7 @@ export function VideoHero() {
           
           <h1 className="text-center text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
                The Smartest Way to Pick the  
- <span className="text-secondary"> Right Insurance</span> for You.
+ <span className="text-secondary"> Right Insurance</span> for You
             </h1>
           
           <p className="text-center text-xl text-white/80 mb-8">
@@ -140,9 +140,9 @@ that fits you — fast, fair, and flexible.
           <p className="text-black ">
            Trusted by real people.
           </p>
-          <p className="text-black ">
+          {/* <p className="text-black ">
            Trustpilot
-          </p>
+          </p> */}
     </div>
 </div>
   );
