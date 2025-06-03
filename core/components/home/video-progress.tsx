@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Container } from "~/components/ui/container";
 import { Section } from "~/components/ui/section";
 import { cn } from "~/lib/utils";
+import {  SectionHeader } from "~/components/ui/section";
 
 interface ProgressItemProps {
   title: string;
@@ -76,6 +77,11 @@ export function VideoProgress() {
   return (
     <Section>
       <Container>
+        <SectionHeader 
+                  title="How It Works"
+                 
+                />
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             {items.map((item, index) => (
